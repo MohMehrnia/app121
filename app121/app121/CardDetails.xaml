@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="app121.CardDetails"
+             FlowDirection="RightToLeft">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="Green" HeightRequest="80">
+                <Label
+                   HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="Title">شکستگی لوله در خیابان</Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="CadetBlue">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="وضعیت پرونده:" FontSize="Title" TextColor="Black"/>
+                    <Label HorizontalOptions="StartAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="Title">در حال شروع عملیات</Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical">
+                    <Label Text="آدرس:" FontSize="Title" TextColor="Black"/>
+                    <Label HorizontalOptions="StartAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="Title">چمران، شهرک بعثت، خیابان بهار سوم، کوچه اندیشه</Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="نام تماس گیرنده:" FontSize="Title" TextColor="Black"/>
+                    <Label HorizontalOptions="StartAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="Title">سید ابراهیم صابری زاده</Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="شماره تماس:" FontSize="Title" TextColor="Black"/>
+                    <Label HorizontalOptions="StartAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="Title">09351234567</Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="شماره پرونده:" FontSize="Title" TextColor="Black"/>
+                    <Label HorizontalOptions="StartAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="Title">09351234567</Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="تاریخ ثبت:" FontSize="Title" TextColor="Black"/>
+                    <Label HorizontalOptions="StartAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="Title">1398/03/25</Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button Text="گرفتن عکس از محل" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked_1"/>
+                <Button Text="برگشت" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

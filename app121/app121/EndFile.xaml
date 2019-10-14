@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="app121.EndFile"
+             Title="خاتمه یافته"
+             FlowDirection="RightToLeft">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar Placeholder="جستجو"/>
+            <ListView 
+                ItemsSource="{Binding CardsInfo}"
+                ItemSelected="ListView_ItemSelected"
+                ItemTapped="ListView_ItemTapped"
+                HasUnevenRows="True"
+                SeparatorColor="Blue">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <ViewCell.View>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal"
+                                                 HorizontalOptions="FillAndExpand"
+                                                 VerticalOptions="FillAndExpand">
+                                        <CheckBox  IsChecked="True" IsEnabled="False"/>
+                                        <Label Text="{Binding Reason}" FontAttributes="Bold" TextColor="green" VerticalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                    <Label Text="{Binding Status}" FontAttributes="Italic"/>
+                                    <Label Text="{Binding Address}"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
